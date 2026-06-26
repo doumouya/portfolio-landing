@@ -1,11 +1,11 @@
-# portfolio
+# portfolio-landing
 
-![deploy](https://github.com/doumouya/portfolio/actions/workflows/deploy.yml/badge.svg)
+![deploy](https://github.com/doumouya/portfolio-landing/actions/workflows/deploy.yml/badge.svg)
 
 The front door to four open-source, privacy-by-design projects. Each runs entirely in your browser,
 and the whole set runs **offline** — there is no backend to any of the demos.
 
-- **Live:** https://doumouya.github.io/portfolio
+- **Live:** https://doumouya.github.io/portfolio-landing
 - **Offline:** *Code → Download ZIP*, unzip, open `index.html`, and click any **Try it**. Every demo
   is a single self-contained file with its Rust→WebAssembly engine embedded — your data never leaves
   the page.
