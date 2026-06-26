@@ -1,6 +1,6 @@
 /** The portfolio front-door: a card per project, built from data. Styled with web-kit's tokens. */
 
-type Kind = "Data table" | "Analytics" | "Access control" | "System";
+type Kind = "Data cleaning" | "Data table" | "Analytics" | "Access control" | "System";
 
 interface Project {
   title: string;
@@ -13,6 +13,16 @@ interface Project {
 }
 
 const PROJECTS: Project[] = [
+  {
+    title: "csv-workbench",
+    kind: "Data cleaning",
+    blurb:
+      "Import a CSV and clean it with a tools panel — normalize headers, change column types (locale-aware: it reads 1 234,56 and oui/non), fill or drop empties, split, combine, find & replace — then export. The full Polars data engine, compiled to WebAssembly and run in a Web Worker; your data never leaves the page.",
+    stack: "Rust · Polars → wasm · Web Worker · TypeScript",
+    repo: "https://github.com/doumouya/csv-workbench",
+    demo: "https://doumouya.github.io/csv-workbench/",
+    docs: "https://github.com/doumouya/csv-workbench/blob/main/README.md",
+  },
   {
     title: "advanced-datatable",
     kind: "Data table",

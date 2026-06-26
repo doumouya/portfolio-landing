@@ -607,6 +607,15 @@ footer { max-width: var(--container); margin: 0 auto; padding: var(--space-6); c
 <script type="module">// src/landing.ts
 var PROJECTS = [
   {
+    title: "csv-workbench",
+    kind: "Data cleaning",
+    blurb: "Import a CSV and clean it with a tools panel \u2014 normalize headers, change column types (locale-aware: it reads 1 234,56 and oui/non), fill or drop empties, split, combine, find & replace \u2014 then export. The full Polars data engine, compiled to WebAssembly and run in a Web Worker; your data never leaves the page.",
+    stack: "Rust \xB7 Polars \u2192 wasm \xB7 Web Worker \xB7 TypeScript",
+    repo: "https://github.com/doumouya/csv-workbench",
+    demo: "https://doumouya.github.io/csv-workbench/",
+    docs: "https://github.com/doumouya/csv-workbench/blob/main/README.md"
+  },
+  {
     title: "advanced-datatable",
     kind: "Data table",
     blurb: "Open a CSV and explore it \u2014 sort, filter, project, export \u2014 entirely in your browser. The engine is Rust compiled to WebAssembly; the file never leaves the page.",
