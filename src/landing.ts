@@ -15,23 +15,13 @@ interface Project {
 const PROJECTS: Project[] = [
   {
     title: "csv-workbench",
-    kind: "Data cleaning",
+    kind: "Data table",
     blurb:
-      "Import a CSV and clean it with a tools panel — normalize headers, change column types (locale-aware: it reads 1 234,56 and oui/non), fill or drop empties, split, combine, find & replace — then export. The full Polars data engine, compiled to WebAssembly and run in a Web Worker; your data never leaves the page.",
+      "Open a CSV and work it like a spreadsheet — live full-text search, click-to-sort, inline cell edits, and row select/delete — then clean it with a tools panel: normalize headers, change column types (locale-aware: it reads 1 234,56 and oui/non), fill or drop empties, split, combine, find & replace. Every change is an undoable step with a visible history; export when done. The full Polars data engine, compiled to WebAssembly and run in a Web Worker; your data never leaves the page.",
     stack: "Rust · Polars → wasm · Web Worker · TypeScript",
     repo: "https://github.com/doumouya/csv-workbench",
     demo: "https://doumouya.github.io/csv-workbench/",
     docs: "https://github.com/doumouya/csv-workbench/blob/main/README.md",
-  },
-  {
-    title: "advanced-datatable",
-    kind: "Data table",
-    blurb:
-      "Open a CSV and explore it — sort, filter, project, export — entirely in your browser. The engine is Rust compiled to WebAssembly; the file never leaves the page.",
-    stack: "Rust → wasm · TypeScript",
-    repo: "https://github.com/doumouya/advanced-datatable",
-    demo: "apps/advanced-datatable/index.html",
-    docs: "https://github.com/doumouya/advanced-datatable/blob/main/docs/spec.md",
   },
   {
     title: "echarts-dashboard",

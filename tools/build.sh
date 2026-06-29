@@ -30,7 +30,7 @@ mkdir -p .build apps
 } > index.html
 
 # 3. copy each app's offline demo (their own repos build/commit these)
-for app in advanced-datatable echarts-dashboard rbac-explorer; do
+for app in echarts-dashboard rbac-explorer; do
   if [ -f "../$app/index.html" ]; then
     mkdir -p "apps/$app"
     cp "../$app/index.html" "apps/$app/index.html"

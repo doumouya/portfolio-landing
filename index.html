@@ -52,10 +52,9 @@ hr {
 /* ============================================================
    Datacore — Colors
    ------------------------------------------------------------
-   Source of truth: advanced-datatable `web/style.css`, which
-   uses a cool neutral (gray/slate) palette + a single blue
-   accent, with a hand-authored dark theme via prefers-color-
-   scheme. We formalize that into base ramps + semantic aliases,
+   The palette is a cool neutral (gray/slate) ramp + a single
+   blue accent, with a hand-authored dark theme via prefers-
+   color-scheme. We formalize that into base ramps + semantic aliases,
    and add restrained status hues for the build-engine work
    tracker (backlog / in_progress / in_review / done, close-check
    pass/fail, reject states).
@@ -608,21 +607,12 @@ footer { max-width: var(--container); margin: 0 auto; padding: var(--space-6); c
 var PROJECTS = [
   {
     title: "csv-workbench",
-    kind: "Data cleaning",
-    blurb: "Import a CSV and clean it with a tools panel \u2014 normalize headers, change column types (locale-aware: it reads 1 234,56 and oui/non), fill or drop empties, split, combine, find & replace \u2014 then export. The full Polars data engine, compiled to WebAssembly and run in a Web Worker; your data never leaves the page.",
+    kind: "Data table",
+    blurb: "Open a CSV and work it like a spreadsheet \u2014 live full-text search, click-to-sort, inline cell edits, and row select/delete \u2014 then clean it with a tools panel: normalize headers, change column types (locale-aware: it reads 1 234,56 and oui/non), fill or drop empties, split, combine, find & replace. Every change is an undoable step with a visible history; export when done. The full Polars data engine, compiled to WebAssembly and run in a Web Worker; your data never leaves the page.",
     stack: "Rust \xB7 Polars \u2192 wasm \xB7 Web Worker \xB7 TypeScript",
     repo: "https://github.com/doumouya/csv-workbench",
     demo: "https://doumouya.github.io/csv-workbench/",
     docs: "https://github.com/doumouya/csv-workbench/blob/main/README.md"
-  },
-  {
-    title: "advanced-datatable",
-    kind: "Data table",
-    blurb: "Open a CSV and explore it \u2014 sort, filter, project, export \u2014 entirely in your browser. The engine is Rust compiled to WebAssembly; the file never leaves the page.",
-    stack: "Rust \u2192 wasm \xB7 TypeScript",
-    repo: "https://github.com/doumouya/advanced-datatable",
-    demo: "apps/advanced-datatable/index.html",
-    docs: "https://github.com/doumouya/advanced-datatable/blob/main/docs/spec.md"
   },
   {
     title: "echarts-dashboard",
